@@ -45,3 +45,4 @@ import Chronicle.Level
 import Chronicle.Format
 import Chronicle.Config
 import Chronicle.Logger
+import Chronicle.MultiLogger
