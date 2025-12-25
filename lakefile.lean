@@ -5,7 +5,7 @@ package chronicle where
   version := v!"0.1.0"
 
 require crucible from ".." / "crucible"
-require loom from ".." / "loom"
+-- Note: Loom integration is provided via Loom.Chronicle (in loom package)
 
 @[default_target]
 lean_lib Chronicle where
