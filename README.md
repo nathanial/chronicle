@@ -16,7 +16,7 @@ A file-based logging library for Lean 4 with configurable text and JSON output f
 Add to your `lakefile.lean`:
 
 ```lean
-require chronicle from ".." / "chronicle"  -- adjust path as needed
+require chronicle from git "https://github.com/nathanial/chronicle" @ "v0.0.1"
 ```
 
 ## Quick Start
