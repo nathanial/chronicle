@@ -4,7 +4,7 @@ open Lake DSL
 package chronicle where
   version := v!"0.1.0"
 
-require crucible from ".." / "crucible"
+require crucible from git "https://github.com/nathanial/crucible" @ "v0.0.1"
 -- Note: Loom integration is provided via Loom.Chronicle (in loom package)
 
 @[default_target]
