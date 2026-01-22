@@ -63,7 +63,7 @@ test "fromString returns none for invalid" :=
 test "fromString handles warning alias" :=
   Level.fromString "warning" ≡ some Level.warn
 
-#generate_tests
+
 
 end Tests.Level
 
@@ -148,7 +148,7 @@ test "formatJson includes optional fields when present" := do
   shouldSatisfy (json.containsSubstr "\"method\":\"GET\"") "should have method"
   shouldSatisfy (json.containsSubstr "\"status\":200") "should have status"
 
-#generate_tests
+
 
 end Tests.Format
 
@@ -200,7 +200,7 @@ test "builder chain works" := do
   cfg.format ≡ Format.json
   shouldSatisfy cfg.alsoStderr "stderr should be enabled in chain"
 
-#generate_tests
+
 
 end Tests.Config
 
@@ -280,7 +280,7 @@ test "creates parent directories" := do
   IO.FS.removeFile tempPath
   IO.FS.removeDirAll "/tmp/chronicle_test_nested"
 
-#generate_tests
+
 
 end Tests.Logger
 
